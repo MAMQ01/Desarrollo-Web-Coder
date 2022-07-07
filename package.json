@@ -1,5 +1,5 @@
 {
-  "name": "proyecto-desarrolo-web-coder",
+  "name": "desarrollo-web-coder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,16 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MAMQ01/Proyecto-Desarrollo-Web-Coder.git"
+    "url": "git+https://github.com/MAMQ01/Desarrollo-web-Coder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MAMQ01/Proyecto-Desarrollo-Web-Coder/issues"
+    "url": "https://github.com/MAMQ01/Desarrollo-web-Coder/issues"
   },
-  "homepage": "https://github.com/MAMQ01/Proyecto-Desarrollo-Web-Coder#readme",
+  "homepage": "https://github.com/MAMQ01/Desarrollo-web-Coder#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   }
 }
