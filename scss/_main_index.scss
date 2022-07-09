@@ -1,0 +1,47 @@
+.main {
+    grid-area: main;
+    background-color: $colorPrimario;
+    color: $colorBlanco;
+    justify-content: center;
+    .main__index{
+        .filtros{
+            background-color: $colorNaranjaGD;
+            align-items: center;
+            justify-content: space-evenly;
+            max-height: 300px;
+            width: 100%;
+            color: #000;
+            font-weight: 650;
+            font-size: 0.8rem;
+            display: flex;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            margin-top: 0.3rem;
+            .filtro_1{
+                padding: 0.2rem;
+                h5{
+                    font-size: 1rem;
+                }
+            }
+            .filtro_2 {
+                padding: 0.2rem;
+                h5{
+                    font-size: 1rem;
+                }
+            }
+            button{
+                background-color: $colorBlanco;
+                border-radius: 0.5rem;
+                max-height: 3rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .aside_container {
+            display: flex;
+            padding: 1rem;
+            justify-content: space-evenly;
+            margin-bottom: 0.3rem;
+        }
+    }
+}

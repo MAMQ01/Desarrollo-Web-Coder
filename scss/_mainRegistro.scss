@@ -1,0 +1,87 @@
+.main__registro{
+    h1{
+        color: $colorBlanco;
+        justify-content: center;
+        align-content: center;
+        font-size: 2.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        display: flex;
+        padding-top: 1.5rem;
+        margin-top: 0.3rem;
+    }
+    .formularios{
+        display: flex;
+        justify-content: center;
+        .form {
+            background-color: $colorRosaGD;
+            width: 35%;
+            margin: 2rem;
+            justify-content: center;
+            min-width: 200px;
+            max-width: 600px;
+            border-radius: 1.5rem;
+            padding:1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            p{
+                color: $colorNegro;
+            }
+            input{
+                padding: 0.15rem;
+                margin: 0.15rem;
+                padding: 0.5rem;
+                font-size: 1rem;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                width: 100%;
+            }
+            :focus{
+                outline: none;
+                border: 2px solid $colorNaranjaGD;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+
+.main{
+    .main__registro{
+        .formularios{
+            .form{ 
+                .form_1{
+                    color: $colorNegro;
+                    font-size: 1rem;
+                    p{
+                        width: 100%;
+                        color: $colorNegro;
+                        font-size: larger;
+                    }
+                }
+                .form_2{
+                    color: $colorNegro;
+                    font-size: 1rem;
+                    p{
+                        width: 100%;
+                        color: $colorNegro;
+                        font-size: larger;
+                    }
+                    .registrarse {
+                        margin: 1rem;
+                        padding: 0.5rem;
+                        button{
+                            font-size: 1rem;
+                            padding: 0.5rem;
+                            background-color: $colorBlanco;
+                            border-radius: 0.3rem;
+                            border-style: none;
+                            font-weight: 500;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.aside{
+    width: 13.5rem;
+    padding: 1.5rem;
+    background-color: $colorSecundario;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    h3{
+        padding: 1.5rem;
+        text-align: center;
+        color: $colorBlanco;
+    }
+    p{
+    text-align: initial;
+    }
+    a {
+    padding: 1.5rem;
+    text-align: center;
+    color:$colorBlanco;
+    }
+}
