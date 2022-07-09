@@ -142,7 +142,6 @@ header {
   justify-content: center;
   align-content: center;
   font-size: 2.5rem;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   display: flex;
   padding-top: 1.5rem;
@@ -153,11 +152,10 @@ header {
   justify-content: center; }
   .main__registro .formularios .form {
     background-color: #ddb6f1;
-    width: 35%;
     margin: 2rem;
     justify-content: center;
     min-width: 200px;
-    max-width: 600px;
+    max-width: 500px;
     border-radius: 1.5rem;
     padding: 1.5rem;
     text-align: center;
@@ -166,43 +164,39 @@ header {
     .main__registro .formularios .form p {
       color: #000; }
     .main__registro .formularios .form input {
-      padding: 0.15rem;
-      margin: 0.15rem;
       padding: 0.5rem;
-      font-size: 1rem;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.13rem;
       text-align: center;
       width: 100%; }
     .main__registro .formularios .form :focus {
       outline: none;
       border: 2px solid #f8af40;
       border-radius: 2px; }
-
-.main .main__registro .formularios .form .form_1 {
-  color: #000;
-  font-size: 1rem; }
-  .main .main__registro .formularios .form .form_1 p {
-    width: 100%;
-    color: #000;
-    font-size: larger; }
-
-.main .main__registro .formularios .form .form_2 {
-  color: #000;
-  font-size: 1rem; }
-  .main .main__registro .formularios .form .form_2 p {
-    width: 100%;
-    color: #000;
-    font-size: larger; }
-  .main .main__registro .formularios .form .form_2 .registrarse {
-    margin: 1rem;
-    padding: 0.5rem; }
-    .main .main__registro .formularios .form .form_2 .registrarse button {
-      font-size: 1rem;
-      padding: 0.5rem;
-      background-color: #ffffff;
-      border-radius: 0.3rem;
-      border-style: none;
-      font-weight: 500; }
+    .main__registro .formularios .form .form_1 {
+      color: #000;
+      font-size: 1.13rem; }
+      .main__registro .formularios .form .form_1 p {
+        width: 100%;
+        color: #000;
+        font-size: larger; }
+    .main__registro .formularios .form .form_2 {
+      color: #000;
+      font-size: 1.13rem; }
+      .main__registro .formularios .form .form_2 p {
+        width: 100%;
+        color: #000;
+        font-size: larger; }
+      .main__registro .formularios .form .form_2 .registrarse {
+        margin: 1rem;
+        padding: 0.5rem; }
+        .main__registro .formularios .form .form_2 .registrarse button {
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          background-color: #ffffff;
+          border-radius: 0.3rem;
+          border-style: none;
+          font-weight: 500;
+          border: 0; }
 
 .main .mainContacto {
   display: flex;
@@ -302,44 +296,6 @@ header {
             transform: scale(1.3); }
     .main .containerPerfil .mainPefil .mainPefil:hover {
       transform: scale(1.03); }
-
-.mainProducto {
-  padding-top: 1rem; }
-  .mainProducto .targetaPrecio {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8af40;
-    padding-bottom: 2rem; }
-    .mainProducto .targetaPrecio h2 {
-      font-size: 1.5rem;
-      width: 60%;
-      background-color: #9c1ede;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px; }
-    .mainProducto .targetaPrecio h3 {
-      font-size: 1rem; }
-    .mainProducto .targetaPrecio p {
-      font-size: 1rem;
-      padding: 0rem 2rem; }
-    .mainProducto .targetaPrecio img {
-      width: 80%; }
-  .mainProducto .filtrosProductos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    .mainProducto .filtrosProductos button {
-      padding: 0.5rem;
-      background-color: #ffffff;
-      font-size: 1rem; }
-  .mainProducto .productos h1 {
-    font-size: 1rem;
-    color: #ffffff; }
 
 @media (max-width: 700px) {
   .container {

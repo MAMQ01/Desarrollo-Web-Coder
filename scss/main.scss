@@ -30,54 +30,7 @@
 
 
 
-.mainProducto{
-    padding-top: 1rem;
-    .targetaPrecio{
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #f8af40;
-        padding-bottom: 2rem;
-        h2{
-            font-size: 1.5rem;
-            width: 60%;
-            background-color: #9c1ede;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-        }
-        h3{
-            font-size: 1rem;
-        }
-        p{
-            font-size: 1rem;
-            padding: 0rem 2rem;
-        }
-        img{
-            width: 80%;
-        }
-    }
-    .filtrosProductos{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        button{
-            padding: 0.5rem;
-            background-color: $colorBlanco;
-            font-size: 1rem;
-        }
-    }
-    .productos{
-        h1{
-            font-size: 1rem;
-            color: $colorBlanco;
-        }
-    }
-}
+
 
 
 
