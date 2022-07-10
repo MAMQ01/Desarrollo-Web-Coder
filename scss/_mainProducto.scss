@@ -1,5 +1,5 @@
 .mainProducto{
-    padding-top: 1rem;
+    padding: 0.5rem;
     .targetaPrecio{
         width: 500px;
         display: flex;
@@ -33,11 +33,6 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        button{
-            padding: 0.5rem;
-            background-color: $colorBlanco;
-            font-size: 1rem;
-        }
     }
     .productos{
         h1{

@@ -1,11 +1,74 @@
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+$colores:(
+    colorPrimario :   #141D3C,
+    colorSecundario : #02AFFE,
+    colorBlanco :     #ffffff,
+    colorNaranjaGD:   #f8af40,
+    colorNegro:       #000,
+    colorRosaGD:      #ddb6f1,
+    colorMorado:      #9c1ede,
+    ColorGris:        #314652,
+);
+
+
+
+$titulosPrincipales:(
+    padding:  1rem,
+    f-Size:   2rem,
+    color:  #fff,
+);
+
+$botonPrincipal:(
+    padding: 5px 10px,
+    bordes: 0,
+    border:2px,
+    color: #000,
+    margin: 0.3rem,
+    b-Color: #fff,
+    m-Heigth: 30px,
+    a-Items: center,
+    f-Size: 1rem,
+    f-Weight:450
+);
+
+.btnPrincipal{
+    padding:          map-get($botonPrincipal , padding );
+    border:           map-get($botonPrincipal , bordes );
+    border-radius:    map-get($botonPrincipal , border );
+    color:            map-get($botonPrincipal , color );
+    margin:           map-get($botonPrincipal , margin );
+    background-color: map-get($botonPrincipal , b-Color );
+    max-height:       map-get($botonPrincipal , m-Heigth );
+    align-items:      map-get($botonPrincipal , center );
+    font-size:        map-get($botonPrincipal , f-Size );
+    font-weight:      map-get($botonPrincipal , f-Weight );
+}
+
+$justify:(
+    start:start,
+    center:center,
+    end:end,
+    around:space-around,
+    between:space-between,
+    evenly:space-evenly
+);
+
+
+
+
+@each $clave , $var in $colores {
+    .btn-#{$clave} {
+        color: $var
+    }
+}
+
+
+
 
 @import "variables";
 
