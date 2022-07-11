@@ -3,7 +3,6 @@
     background-color: $colorPrimario;
     color: $colorBlanco;
     justify-content: center;
-    margin-top: 0.3rem;
     .main__index{
         .filtros{
             background-color: $colorNaranjaGD;
@@ -12,22 +11,21 @@
             max-height: 300px;
             width: 100%;
             color: #000;
-            font-weight: 650;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             display: flex;
             text-align: center;
-            padding: 0.5rem 1rem;
-            margin-top: 0.3rem;
             .filtro_1{
                 padding: 0.2rem;
                 h5{
                     font-size: 1rem;
+                    font-weight: 400;
                 }
             }
             .filtro_2 {
                 padding: 0.2rem;
                 h5{
                     font-size: 1rem;
+                    font-weight: 400;
                 }
             }
             button{

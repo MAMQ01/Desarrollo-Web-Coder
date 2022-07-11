@@ -5,9 +5,9 @@
 }
 
 $colores:(
-    colorPrimario :   #141D3C,
-    colorSecundario : #02AFFE,
-    colorBlanco :     #ffffff,
+    colorPrimario:    #141D3C,
+    colorSecundario:  #02AFFE,
+    colorBlanco:      #ffffff,
     colorNaranjaGD:   #f8af40,
     colorNegro:       #000,
     colorRosaGD:      #ddb6f1,
@@ -51,7 +51,7 @@ $botonPrincipal:(
     m-Heigth: 30px,
     a-Items: center,
     f-Size: 1rem,
-    f-Weight:450
+    f-Weight:450,
 );
 
 .btnPrincipal{
@@ -68,6 +68,44 @@ $botonPrincipal:(
 }
 
 
+// $textoParrafo:(
+//     padding: 5px 10px,
+//     border:2px,
+//     m-Heigth: 30px,
+//     a-Items: center,
+//     f-Size: 1rem,
+//     f-Weight:450,
+//     a-Content: center,
+//     j-Content: center,
+//     display: flex,
+// );
+
+// .textoParrafo{
+//     padding:          map-get($textoParrafo , padding );
+//     border-radius:    map-get($textoParrafo , border );
+//     margin:           map-get($textoParrafo , margin );
+//     background-color: map-get($textoParrafo , b-Color );
+//     align-items:      map-get($textoParrafo , center );
+//     font-size:        map-get($textoParrafo , f-Size );
+//     font-weight:      map-get($textoParrafo , f-Weight );
+//     justify-content:  map-get($textoParrafo , j-Content );
+//     display:          map-get($textoParrafo , display );
+//     align-items:      map-get($textoParrafo , a-Content );
+// }
+
+
+// $textoFiltros:(
+//     f-Size: 1rem,
+//     color: #000,
+//     margin: 0.5rem,
+
+// );
+
+// .textoFiltros{
+//     font-size:  map-get($textoFiltros , f-Size );
+//     color:      map-get($textoFiltros , color );
+//     margin:     map-get($textoFiltros , margin );
+// }
 
 
 
