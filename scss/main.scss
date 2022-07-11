@@ -16,12 +16,30 @@ $colores:(
 );
 
 
-
 $titulosPrincipales:(
     padding:  1rem,
-    f-Size:   2rem,
+    f-Size:   1.75rem,
     color:  #fff,
+    j-Content: center,
+    a-Content: center,
+    f-Weight: 320,
+    display: flex,
+    padding-top: 1.5rem,
+    margin: 0rem,
 );
+
+.tituloPrincipal{
+    padding:           map-get($titulosPrincipales , padding);
+    font-size:         map-get($titulosPrincipales , f-Size );
+    color:             map-get($titulosPrincipales , color );
+    display:           map-get($titulosPrincipales , display );
+    justify-content:   map-get($titulosPrincipales , j-Content );
+    align-content:     map-get($titulosPrincipales , a-Content );
+    font-weight:       map-get($titulosPrincipales , f-Weight);
+    margin:            map-get($titulosPrincipales , margin );
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 $botonPrincipal:(
     padding: 5px 10px,
@@ -49,14 +67,7 @@ $botonPrincipal:(
     font-weight:      map-get($botonPrincipal , f-Weight );
 }
 
-$justify:(
-    start:start,
-    center:center,
-    end:end,
-    around:space-around,
-    between:space-between,
-    evenly:space-evenly
-);
+
 
 
 
