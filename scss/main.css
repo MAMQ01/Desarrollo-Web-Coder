@@ -388,71 +388,100 @@ header .navbar .container-fluid .logo {
   transform: scale(1.03);
 }
 
-.main {
-  grid-area: main;
-  background-color: #141D3C;
-  color: #ffffff;
-  justify-content: center;
-  margin-top: 0.3rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.main .mainProducto .filtrosProductos {
+
+.mainProducto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.mainProducto .filtrosProductos {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #f8af40;
   margin-bottom: 0.3rem;
+  max-height: 300px;
 }
-.main .mainProducto .targetasProductos {
+.mainProducto .targetaPrecio {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px, auto;
-  grid-template-areas: "header header header" "aside targetaPrecio targetaPrecio" "main   main   main" "footer footer footer";
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.6rem;
-  overflow: hidden;
-}
-.main .mainProducto .targetasProductos .asideProducto {
-  grid-template-areas: asideProducto;
-  padding: 1.5rem;
-  background-color: #02AFFE;
-  border-radius: 20px;
+  grid-area: targetaPrecio;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main .mainProducto .targetasProductos .asideProducto h3 {
+.mainProducto .targetaPrecio .targetaPrecio__container {
+  max-width: 400px;
+  background-color: #f8af40;
+}
+.mainProducto .targetaPrecio .targetaPrecio__container h3 {
+  font-size: 1rem;
+}
+.mainProducto .targetaPrecio .targetaPrecio__container img {
+  width: 100%;
+  border-radius: none;
+}
+.mainProducto .asideProducto {
+  width: 100%;
+  max-height: 300px;
+  padding: 1.5rem;
+  background-color: #02AFFE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid #000 1px;
+}
+.mainProducto .asideProducto h3 {
   padding: 1.5rem;
   text-align: center;
   color: #ffffff;
 }
-.main .mainProducto .targetasProductos .asideProducto p {
+.mainProducto .asideProducto p {
   text-align: justify;
 }
-.main .mainProducto .targetasProductos .asideProducto a {
+.mainProducto .asideProducto a {
   font-weight: 500;
   text-decoration: none;
   color: white;
   bottom: 0.5rem;
   padding: 0rem;
 }
-.main .mainProducto .targetasProductos .targetaPrecio {
-  width: 100%;
-  grid-area: targetaPrecio;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #f8af40;
-  padding-bottom: 2rem;
+.mainProducto .targetasProductos {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4fr 1fr);
+  grid-template-areas: "targetasProducto      targetasProductos     targetasProductos  targetasProductos";
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.6rem;
+  overflow: hidden;
+  border: solid #000 1px;
+  margin: 1rem;
+  padding: 1rem;
 }
-.main .mainProducto .targetasProductos .targetaPrecio h3 {
+.mainProducto .targetaProducto {
+  max-width: 300px;
+  background-color: aquamarine;
+  border: #000 solid 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #000;
+  max-width: 54rem;
+}
+.mainProducto .targetaProducto h4 {
   font-size: 1rem;
 }
-.main .mainProducto .targetasProductos .targetaPrecio img {
-  width: 80%;
+.mainProducto .targetaProducto img {
+  width: 100%;
 }
+
 @media (max-width: 768px) {
   .container {
     display: flex;
