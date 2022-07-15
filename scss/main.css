@@ -4,16 +4,45 @@
   box-sizing: border-box;
 }
 
+.tituloPrincipal {
+  padding: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: 320;
+  margin: 0rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 .btnPrincipal {
-  padding: 5px 10px;
+  padding: 6px 8px;
   border: 0;
-  border-radius: 2px;
+  border-radius: 3px;
   color: #000;
-  margin: 0.3rem;
   background-color: #fff;
-  max-height: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  border-style: none;
+  max-height: 40px;
+}
+
+.textoParrafo {
+  padding: 5px 10px;
+  border-radius: 2px;
   font-size: 1rem;
   font-weight: 450;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.textoFiltros {
+  font-size: 1rem;
+  color: #000;
+  padding: 0.1rem;
 }
 
 .btn-colorPrimario {
@@ -53,6 +82,7 @@
   background-color: #141D3C;
   color: #ffffff;
   justify-content: center;
+  margin-top: 0.3rem;
 }
 .main .main__index .filtros {
   background-color: #f8af40;
@@ -61,31 +91,18 @@
   max-height: 300px;
   width: 100%;
   color: #000;
-  font-weight: 650;
-  font-size: 0.8rem;
   display: flex;
   text-align: center;
-  padding: 0.5rem 1rem;
-  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+.main .main__index .filtros h5 {
+  font-size: 1rem;
 }
 .main .main__index .filtros .filtro_1 {
   padding: 0.2rem;
 }
-.main .main__index .filtros .filtro_1 h5 {
-  font-size: 1rem;
-}
 .main .main__index .filtros .filtro_2 {
   padding: 0.2rem;
-}
-.main .main__index .filtros .filtro_2 h5 {
-  font-size: 1rem;
-}
-.main .main__index .filtros button {
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  max-height: 3rem;
-  justify-content: center;
-  align-items: center;
 }
 .main .main__index .aside_container {
   display: flex;
@@ -117,7 +134,7 @@ header .navbar .container-fluid .logo {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  align-items: center;
 }
 .aside h3 {
   padding: 1.5rem;
@@ -125,12 +142,14 @@ header .navbar .container-fluid .logo {
   color: #ffffff;
 }
 .aside p {
-  text-align: initial;
+  text-align: justify;
 }
 .aside a {
-  padding: 1.5rem;
-  text-align: center;
-  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  bottom: 0.5rem;
+  padding: 0rem;
 }
 
 .container {
@@ -144,7 +163,6 @@ header .navbar .container-fluid .logo {
   justify-content: center;
   gap: 1.6rem;
   overflow: hidden;
-  padding-top: 2rem;
 }
 .container .targeta {
   width: 100%;
@@ -152,30 +170,31 @@ header .navbar .container-fluid .logo {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: all 0.25s;
+  padding: 0.5rem;
+  max-width: 320px;
 }
 .container .targeta img {
   width: 15rem;
   height: auto;
-  width: 70%;
+  width: 100%;
+  max-width: 250px;
 }
 .container .targeta h4 {
-  font-weight: 300;
-  font-size: 1.5rem;
-  font-family: "Times New Roman", Times, serif;
+  font-weight: 450;
   color: #f8af40;
+  font-size: 1.25rem;
 }
 .container .targeta p {
-  font-weight: 250;
-  padding: 1rem 1rem 1rem 1rem;
-  font-size: 1rem;
-  color: #ffffff;
+  font-weight: 300;
+  color: colorNegro;
+  font-size: 1.12rem;
 }
 .container .targeta a {
   font-weight: 500;
   text-decoration: none;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-  padding: 1rem;
+  color: white;
+  bottom: 0.5rem;
+  padding: 0rem;
 }
 .container .targeta:hover {
   transform: translateY(-15px);
@@ -207,16 +226,6 @@ header .navbar .container-fluid .logo {
   border-right: 1px solid #000;
 }
 
-.main__registro h1 {
-  color: #ffffff;
-  justify-content: center;
-  align-content: center;
-  font-size: 2.5vh;
-  display: flex;
-  padding-top: 1.5rem;
-  margin-top: 0.3rem;
-  font-family: "Courier New", Courier, monospace;
-}
 .main__registro .formularios {
   display: flex;
   justify-content: center;
@@ -241,6 +250,7 @@ header .navbar .container-fluid .logo {
   font-size: 1.13rem;
   text-align: center;
   width: 100%;
+  font-weight: 500;
 }
 .main__registro .formularios .form :focus {
   outline: none;
@@ -250,33 +260,20 @@ header .navbar .container-fluid .logo {
 .main__registro .formularios .form .form_1 {
   color: #000;
   font-size: 1.13rem;
+  font-weight: 500;
 }
 .main__registro .formularios .form .form_1 p {
   width: 100%;
   color: #000;
-  font-size: larger;
 }
 .main__registro .formularios .form .form_2 {
   color: #000;
   font-size: 1.13rem;
+  font-weight: 500;
 }
 .main__registro .formularios .form .form_2 p {
   width: 100%;
   color: #000;
-  font-size: larger;
-}
-.main__registro .formularios .form .form_2 .registrarse {
-  margin: 1rem;
-  padding: 0.5rem;
-}
-.main__registro .formularios .form .form_2 .registrarse button {
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  background-color: #ffffff;
-  border-radius: 0.3rem;
-  border-style: none;
-  font-weight: 500;
-  border: 0;
 }
 
 .main .mainContacto {
@@ -293,21 +290,6 @@ header .navbar .container-fluid .logo {
   flex-direction: column;
   width: 80%;
   max-width: 37.5rem;
-}
-.main .mainContacto .textoContacto h1 {
-  color: #ffffff;
-  justify-content: center;
-  align-content: center;
-  font-size: 2.5rem;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  display: flex;
-  padding-top: 1.5rem;
-  margin-top: 0.3rem;
-}
-.main .mainContacto .textoContacto p {
-  display: flex;
-  justify-content: center;
 }
 .main .mainContacto .carruselesContacto {
   justify-content: center;
@@ -354,7 +336,6 @@ header .navbar .container-fluid .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0.3rem;
 }
 .main .containerPerfil .mainPefil {
   display: flex;
@@ -382,10 +363,6 @@ header .navbar .container-fluid .logo {
 .main .containerPerfil .mainPefil section h3 {
   color: #ffffff;
 }
-.main .containerPerfil .mainPefil section p {
-  margin: 1em 0;
-  color: #ffffff;
-}
 .main .containerPerfil .mainPefil section ul {
   padding: 0;
 }
@@ -411,54 +388,91 @@ header .navbar .container-fluid .logo {
   transform: scale(1.03);
 }
 
-.mainProducto {
-  padding: 0.5rem;
+.main {
+  grid-area: main;
+  background-color: #141D3C;
+  color: #ffffff;
+  justify-content: center;
+  margin-top: 0.3rem;
 }
-.mainProducto .targetaPrecio {
-  width: 500px;
+.main .mainProducto .filtrosProductos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8af40;
+  margin-bottom: 0.3rem;
+}
+.main .mainProducto .targetasProductos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px, auto;
+  grid-template-areas: "header header header" "aside targetaPrecio targetaPrecio" "main   main   main" "footer footer footer";
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem;
+  overflow: hidden;
+}
+.main .mainProducto .targetasProductos .asideProducto {
+  grid-template-areas: asideProducto;
+  padding: 1.5rem;
+  background-color: #02AFFE;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.main .mainProducto .targetasProductos .asideProducto h3 {
+  padding: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+.main .mainProducto .targetasProductos .asideProducto p {
+  text-align: justify;
+}
+.main .mainProducto .targetasProductos .asideProducto a {
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  bottom: 0.5rem;
+  padding: 0rem;
+}
+.main .mainProducto .targetasProductos .targetaPrecio {
+  width: 100%;
+  grid-area: targetaPrecio;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #f8af40;
   padding-bottom: 2rem;
 }
-.mainProducto .targetaPrecio h2 {
-  font-size: 1.5rem;
-  width: 60%;
-  background-color: #9c1ede;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-}
-.mainProducto .targetaPrecio h3 {
+.main .mainProducto .targetasProductos .targetaPrecio h3 {
   font-size: 1rem;
 }
-.mainProducto .targetaPrecio p {
-  font-size: 1rem;
-  padding: 0rem 2rem;
-}
-.mainProducto .targetaPrecio img {
+.main .mainProducto .targetasProductos .targetaPrecio img {
   width: 80%;
 }
-.mainProducto .filtrosProductos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
 }
-.mainProducto .productos h1 {
-  font-size: 1rem;
-  color: #ffffff;
-}
-
 @media (max-width: 700px) {
   .container {
     display: flex;
     grid-template-columns: 1fr;
+    max-height: none;
   }
 }
+.aside_container {
+  padding: 1rem;
+  justify-content: space-evenly;
+  margin-bottom: 0.3rem;
+}
+
 @media (max-width: 576px) {
   .aside_container {
     flex-direction: column;

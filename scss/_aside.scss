@@ -5,18 +5,16 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    align-items: center;
     h3{
         padding: 1.5rem;
         text-align: center;
         color: $colorBlanco;
     }
     p{
-    text-align: initial;
+    text-align: justify;
     }
-    a {
-    padding: 1.5rem;
-    text-align: center;
-    color:$colorBlanco;
+    a{
+        @include propiedadesA(500,none,white,0.5rem,0rem);
     }
 }

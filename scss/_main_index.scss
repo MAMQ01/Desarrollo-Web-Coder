@@ -12,29 +12,17 @@
             max-height: 300px;
             width: 100%;
             color: #000;
-            font-size: 0.75rem;
             display: flex;
             text-align: center;
+            font-size: 0.75rem;
+            h5{
+                font-size: 1rem;
+            }
             .filtro_1{
                 padding: 0.2rem;
-                h5{
-                    font-size: 1rem;
-                    font-weight: 400;
-                }
             }
             .filtro_2 {
                 padding: 0.2rem;
-                h5{
-                    font-size: 1rem;
-                    font-weight: 400;
-                }
-            }
-            button{
-                background-color: $colorBlanco;
-                border-radius: 0.5rem;
-                max-height: 3rem;
-                justify-content: center;
-                align-items: center;
             }
         }
         .aside_container {

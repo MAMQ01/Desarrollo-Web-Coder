@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+
+
+@mixin propiedadesA ($f-Weight,$t-Decoration,$color,$bottom,$padding) {
+    font-weight:     $f-Weight;
+    text-decoration: $t-Decoration;
+    color:           $color;
+    bottom:          $bottom;
+    padding:         $padding;
+}
+
+
+@mixin textoPagina ($f-Weight,$color,$f-Size,) {
+    font-weight: $f-Weight;
+    color:       $color;
+    font-size:   $f-Size;
+}
+
 $colores:(
     colorPrimario:    #141D3C,
     colorSecundario:  #02AFFE,
@@ -14,7 +31,6 @@ $colores:(
     colorMorado:      #9c1ede,
     ColorGris:        #314652,
 );
-
 
 $titulosPrincipales:(
     padding:  1rem,
@@ -37,21 +53,23 @@ $titulosPrincipales:(
     align-content:     map-get($titulosPrincipales , a-Content );
     font-weight:       map-get($titulosPrincipales , f-Weight);
     margin:            map-get($titulosPrincipales , margin );
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 $botonPrincipal:(
-    padding: 5px 10px,
-    bordes: 0,
-    border:2px,
-    color: #000,
-    margin: 0.3rem,
-    b-Color: #fff,
-    m-Heigth: 30px,
-    a-Items: center,
-    f-Size: 1rem,
-    f-Weight:450,
+    padding:  6px 8px,
+    bordes:   0,
+    border:   3px,
+    color:  #000,
+    margin:   0.5rem,
+    b-Color:#fff,
+    a-Items:  center,
+    f-Size:   1.2rem,
+    f-Weight: 500,
+    t-Align:  center,
+    b-Style:  none,
+    m-Height: 40px,
 );
 
 .btnPrincipal{
@@ -59,53 +77,54 @@ $botonPrincipal:(
     border:           map-get($botonPrincipal , bordes );
     border-radius:    map-get($botonPrincipal , border );
     color:            map-get($botonPrincipal , color );
-    margin:           map-get($botonPrincipal , margin );
     background-color: map-get($botonPrincipal , b-Color );
-    max-height:       map-get($botonPrincipal , m-Heigth );
     align-items:      map-get($botonPrincipal , center );
     font-size:        map-get($botonPrincipal , f-Size );
     font-weight:      map-get($botonPrincipal , f-Weight );
+    text-align:       map-get($botonPrincipal , t-Align );
+    border-style: map-get($botonPrincipal , b-Style );
+    max-height: map-get($botonPrincipal , 
+    m-Height );
 }
 
 
-// $textoParrafo:(
-//     padding: 5px 10px,
-//     border:2px,
-//     m-Heigth: 30px,
-//     a-Items: center,
-//     f-Size: 1rem,
-//     f-Weight:450,
-//     a-Content: center,
-//     j-Content: center,
-//     display: flex,
-// );
+$textoParrafo:(
+    padding: 5px 10px,
+    border:2px,
+    m-Heigth: 30px,
+    a-Items: center,
+    f-Size: 1rem,
+    f-Weight:450,
+    a-Content: center,
+    j-Content: center,
+    display: flex,
+);
 
-// .textoParrafo{
-//     padding:          map-get($textoParrafo , padding );
-//     border-radius:    map-get($textoParrafo , border );
-//     margin:           map-get($textoParrafo , margin );
-//     background-color: map-get($textoParrafo , b-Color );
-//     align-items:      map-get($textoParrafo , center );
-//     font-size:        map-get($textoParrafo , f-Size );
-//     font-weight:      map-get($textoParrafo , f-Weight );
-//     justify-content:  map-get($textoParrafo , j-Content );
-//     display:          map-get($textoParrafo , display );
-//     align-items:      map-get($textoParrafo , a-Content );
-// }
+.textoParrafo{
+    padding:          map-get($textoParrafo , padding );
+    border-radius:    map-get($textoParrafo , border );
+    background-color: map-get($textoParrafo , b-Color );
+    align-items:      map-get($textoParrafo , center );
+    font-size:        map-get($textoParrafo , f-Size );
+    font-weight:      map-get($textoParrafo , f-Weight );
+    justify-content:  map-get($textoParrafo , j-Content );
+    display:          map-get($textoParrafo , display );
+    align-items:      map-get($textoParrafo , a-Content );
+}
 
+$textoFiltros:(
+    f-Size: 1rem,
+    color: #000,
+    padding: 0.1rem,
+    t-Align: justify,
+);
 
-// $textoFiltros:(
-//     f-Size: 1rem,
-//     color: #000,
-//     margin: 0.5rem,
-
-// );
-
-// .textoFiltros{
-//     font-size:  map-get($textoFiltros , f-Size );
-//     color:      map-get($textoFiltros , color );
-//     margin:     map-get($textoFiltros , margin );
-// }
+.textoFiltros{
+    font-size:  map-get($textoFiltros , f-Size );
+    color:      map-get($textoFiltros , color );
+    padding:    map-get($textoFiltros , padding );
+    text-align: map-get($textoParrafo , t-Align );
+}
 
 
 
@@ -141,16 +160,36 @@ $botonPrincipal:(
 
 
 
+@media (max-width:768px) {
 
-@media(max-width:700px) {
     .container {
         display: flex;
         grid-template-columns: 1fr;
+        max-height: none;
+    }
+
+}
+
+
+@media(max-width:700px) {
+
+    .container {
+        display: flex;
+        grid-template-columns: 1fr;
+        max-height: none;
     }
 }
 
 
+    .aside_container{
+        padding: 1rem;
+        justify-content: space-evenly;
+        margin-bottom: 0.3rem;
+    }
+
 @media(max-width:576px) {
+
+
 
     .aside_container {
         flex-direction: column;

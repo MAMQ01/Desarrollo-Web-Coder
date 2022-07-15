@@ -1,43 +1,128 @@
-.mainProducto{
-    padding: 0.5rem;
-    .targetaPrecio{
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #f8af40;
-        padding-bottom: 2rem;
-        h2{
-            font-size: 1.5rem;
-            width: 60%;
-            background-color: #9c1ede;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-        }
-        h3{
-            font-size: 1rem;
-        }
-        p{
-            font-size: 1rem;
-            padding: 0rem 2rem;
-        }
-        img{
-            width: 80%;
-        }
-    }
-    .filtrosProductos{
+.main {
+    grid-area: main;
+    background-color: $colorPrimario;
+    color: $colorBlanco;
+    justify-content: center;
+    margin-top: 0.3rem;
+    .mainProducto{
+        .filtrosProductos{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    }
-    .productos{
-        h1{
-            font-size: 1rem;
-            color: $colorBlanco;
+        background-color: $colorNaranjaGD;
+        margin-bottom: 0.3rem;
+        }
+        .targetasProductos{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 300px, auto;
+            grid-template-areas:
+            "header header header"
+            "aside targetaPrecio targetaPrecio"
+            "main   main   main"
+            "footer footer footer";
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:1.6rem;
+            overflow: hidden;
+            .asideProducto{
+                grid-template-areas: asideProducto;
+                padding: 1.5rem;
+                background-color: $colorSecundario;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3{
+                    padding: 1.5rem;
+                    text-align: center;
+                    color: $colorBlanco;
+                }
+                p{
+                text-align: justify;
+                }
+                a{
+                    @include propiedadesA(500,none,white,0.5rem,0rem);
+                }
+            }
+            .targetaPrecio{
+                width: 100%;
+                grid-area: targetaPrecio;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: #f8af40;
+                padding-bottom: 2rem;
+                h2{
+                    // font-size: 1.5rem;
+                    // width: 60%;
+                    // background-color: #9c1ede;
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+                    // border-radius: 20px;
+                }
+                h3{
+                    font-size: 1rem;
+                }
+                img{
+                    width: 80%;
+                }
+            }
+            .containerProductos{
+                .productosSugeridos{
+                    .targetaProducto2{
+        
+                        h4{
+        
+                        }
+                        img{
+                            
+                        }
+        
+                    }
+                    .targetaProducto3{
+        
+                        h4{
+        
+                        }
+                        img{
+                            
+                        }
+                    }
+                    .targetaProducto4{
+        
+                        h4{
+        
+                        }
+                        img{
+                            
+                        }
+                    }
+                    .targetaProducto5{
+        
+                        h4{
+        
+                        }
+                        img{
+                            
+                        }
+                    }
+                    .targetaProducto6{
+        
+                        h4{
+        
+                        }
+                        img{
+        
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
