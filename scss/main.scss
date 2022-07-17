@@ -168,6 +168,17 @@ $textoFiltros:(
         max-height: none;
     }
 
+.targetaPrecio{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000 !important;
+}
+
+    .targetaPrecio{
+
+    }
+
 }
 
 
@@ -178,8 +189,6 @@ $textoFiltros:(
         grid-template-columns: 1fr;
         max-height: none;
     }
-}
-
 
     .aside_container{
         padding: 1rem;
@@ -187,9 +196,19 @@ $textoFiltros:(
         margin-bottom: 0.3rem;
     }
 
+    .targetaPrecio{
+        width: 70%;
+        display: flex;
+        background-color: green !important;
+    }
+}
 @media(max-width:576px) {
 
-
+    .targetaPrecio{
+        width: 70%;
+        display: flex;
+        background-color: #ddb6f1 !important;
+    }
 
     .aside_container {
         flex-direction: column;

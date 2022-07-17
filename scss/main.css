@@ -399,32 +399,17 @@ header .navbar .container-fluid .logo {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
 }
 .mainProducto .filtrosProductos {
+  grid-area: filtrosProductos;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #f8af40;
   margin-bottom: 0.3rem;
   max-height: 300px;
-}
-.mainProducto .targetaPrecio {
-  width: 100%;
-  grid-area: targetaPrecio;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mainProducto .targetaPrecio .targetaPrecio__container {
-  max-width: 400px;
-  background-color: #f8af40;
-}
-.mainProducto .targetaPrecio .targetaPrecio__container h3 {
-  font-size: 1rem;
-}
-.mainProducto .targetaPrecio .targetaPrecio__container img {
-  width: 100%;
-  border-radius: none;
+  padding: 0.5rem;
 }
 .mainProducto .asideProducto {
   width: 100%;
@@ -451,11 +436,29 @@ header .navbar .container-fluid .logo {
   bottom: 0.5rem;
   padding: 0rem;
 }
+.mainProducto .container-fluid {
+  padding-top: 2rem;
+}
+.mainProducto .container-fluid .targetaPrecio__container {
+  padding-top: 1rem;
+}
+.mainProducto .container-fluid .targetaPrecio__container .targetaPrecio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-color: aquamarine;
+}
+.mainProducto .container-fluid .targetaPrecio__container .targetaPrecio .textoPrecio {
+  text-align: justify;
+}
+.mainProducto .container-fluid .targetaPrecio__container .targetaPrecio .carruselesPrecio {
+  max-width: 400px;
+}
 .mainProducto .targetasProductos {
   height: auto;
   display: grid;
-  grid-template-columns: repeat(4fr 1fr);
-  grid-template-areas: "targetasProducto      targetasProductos     targetasProductos  targetasProductos";
+  grid-template-columns: repeat(3fr 1fr);
+  grid-template-areas: "targetaProducto     targetaProducto        targetaProducto";
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1.6rem;
@@ -464,21 +467,20 @@ header .navbar .container-fluid .logo {
   margin: 1rem;
   padding: 1rem;
 }
-.mainProducto .targetaProducto {
+.mainProducto .targetasProductos .targetaProducto {
   max-width: 300px;
-  background-color: aquamarine;
-  border: #000 solid 1px;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  color: #000;
-  max-width: 54rem;
+  color: #ffffff;
+  max-width: 60rem;
 }
-.mainProducto .targetaProducto h4 {
+.mainProducto .targetasProductos .targetaProducto h4 {
   font-size: 1rem;
 }
-.mainProducto .targetaProducto img {
+.mainProducto .targetasProductos .targetaProducto img {
   width: 100%;
 }
 
