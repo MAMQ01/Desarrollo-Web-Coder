@@ -144,7 +144,7 @@ $textoFiltros:(
 
 @import "header";
 
-@import "aside";
+@import "section";
 
 @import "container";
 
@@ -160,6 +160,25 @@ $textoFiltros:(
 
 
 
+@media (max-width:992px) {
+
+    .container {
+        display: flex;
+        grid-template-columns: 2fr;
+        max-height: none;
+    }
+
+    .targetasPrecioContainer{
+        display: flex;
+        flex-direction: column;
+        .targetaPrecio{
+            width: 100%;
+            display: flex;
+            background-color: black !important;
+        }
+    }
+}
+
 @media (max-width:768px) {
 
     .container {
@@ -168,17 +187,15 @@ $textoFiltros:(
         max-height: none;
     }
 
-.targetaPrecio{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    background-color: #000 !important;
-}
-
-    .targetaPrecio{
-
+    .targetasPrecioContainer{
+        display: flex;
+        flex-direction: column;
+        .targetaPrecio{
+            width: 100%;
+            display: flex;
+            background-color: black !important;
+        }
     }
-
 }
 
 
@@ -190,27 +207,39 @@ $textoFiltros:(
         max-height: none;
     }
 
-    .aside_container{
+    .section_container{
         padding: 1rem;
         justify-content: space-evenly;
         margin-bottom: 0.3rem;
     }
 
-    .targetaPrecio{
-        width: 70%;
+    .targetasPrecioContainer{
         display: flex;
-        background-color: green !important;
+        flex-direction: column;
+        .targetaPrecio{
+            width: 100%;
+            display: flex;
+            background-color: green !important;
+        }
     }
+
 }
+
+// carruselcontainer
 @media(max-width:576px) {
 
-    .targetaPrecio{
-        width: 70%;
+    .targetasPrecioContainer{
         display: flex;
-        background-color: #ddb6f1 !important;
+        flex-direction: column;
+        .targetaPrecio{
+            width: 100%;
+            display: flex;
+            background-color: #ddb6f1 !important;
+        }
     }
 
-    .aside_container {
+
+    .section_container {
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
@@ -224,7 +253,7 @@ $textoFiltros:(
         padding: 1rem;
     } */
 
-    .aside {
+    .section {
         width: 100%;
     }
 

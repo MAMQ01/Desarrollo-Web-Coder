@@ -86,7 +86,7 @@
       padding: 0.2rem; }
     .main .main__index .filtros .filtro_2 {
       padding: 0.2rem; }
-  .main .main__index .aside_container {
+  .main .main__index .section_container {
     display: flex;
     padding: 1rem;
     justify-content: space-evenly;
@@ -105,7 +105,7 @@ header {
       width: 110px;
       padding: 0px; }
 
-.aside {
+.section {
   width: 13.5rem;
   padding: 1.5rem;
   background-color: #02AFFE;
@@ -113,13 +113,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .aside h3 {
+  .section h3 {
     padding: 1.5rem;
     text-align: center;
     color: #ffffff; }
-  .aside p {
+  .section p {
     text-align: justify; }
-  .aside a {
+  .section a {
     font-weight: 500;
     text-decoration: none;
     color: white;
@@ -344,7 +344,7 @@ header {
     margin-bottom: 0.3rem;
     max-height: 300px;
     padding: 0.5rem; }
-  .mainProducto .asideProducto {
+  .mainProducto .sectionProducto {
     width: 100%;
     max-height: 300px;
     padding: 1.5rem;
@@ -353,102 +353,104 @@ header {
     flex-direction: column;
     align-items: center;
     border: solid #000 1px; }
-    .mainProducto .asideProducto h3 {
+    .mainProducto .sectionProducto h3 {
       padding: 1.5rem;
       text-align: center;
       color: #ffffff; }
-    .mainProducto .asideProducto p {
+    .mainProducto .sectionProducto p {
       text-align: justify; }
-    .mainProducto .asideProducto a {
+    .mainProducto .sectionProducto a {
       font-weight: 500;
       text-decoration: none;
       color: white;
       bottom: 0.5rem;
       padding: 0rem; }
-  .mainProducto .targetaPrecioContainer {
-    width: 100%; }
-    .mainProducto .targetaPrecioContainer .targetaPrecio {
+  .mainProducto .targetasPrecioContainer {
+    background-color: lightcoral; }
+    .mainProducto .targetasPrecioContainer .targetaPrecio {
       background-color: lightcoral;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      padding: 1rem; }
+      .mainProducto .targetasPrecioContainer .targetaPrecio .textoPrecio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        text-align: justify;
+        align-items: center;
+        padding-top: 4rem; }
+        .mainProducto .targetasPrecioContainer .targetaPrecio .textoPrecio h1 {
+          padding: 0;
+          margin: 0; }
+        .mainProducto .targetasPrecioContainer .targetaPrecio .textoPrecio h2 {
+          padding: 1rem 0 0 0; }
+        .mainProducto .targetasPrecioContainer .targetaPrecio .textoPrecio p {
+          padding: 1rem 0 0 0;
+          margin: 0; }
+    .mainProducto .targetasPrecioContainer .carruselPrecio {
+      width: 100%;
+      padding: 1rem; }
+  .mainProducto .targetasProductos {
+    width: 100%; }
+    .mainProducto .targetasProductos .targetaProducto h4 {
+      font-size: 1rem; }
+    .mainProducto .targetasProductos .targetaProducto img {
+      width: 70%; }
+
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    grid-template-columns: 2fr;
+    max-height: none; }
+  .targetasPrecioContainer {
+    display: flex;
+    flex-direction: column; }
+    .targetasPrecioContainer .targetaPrecio {
       width: 100%;
       display: flex;
-      flex-direction: row-reverse; }
-      .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio {
-        display: flex;
-        grid-area: textoPrecio;
-        padding: 1rem;
-        width: 50%;
-        text-align: justify; }
-        .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h1 {
-          grid-area: "textoPrecio__h1"; }
-        .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio p {
-          grid-area: parrafoPrecio;
-          width: 100%;
-          padding: 0;
-          margin: 15px 0px 15px 0px;
-          text-align: justify; }
-      .mainProducto .targetaPrecioContainer .targetaPrecio .carruselesPrecio {
-        grid-area: "carruselPrecio";
-        padding: 1rem;
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        max-width: 500px; }
-  .mainProducto .targetasProductos {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 1.6rem;
-    overflow: hidden;
-    border: solid #000 1px;
-    margin: 1rem;
-    padding: 1rem; }
-    .mainProducto .targetasProductos .targetaProducto {
-      max-width: 300px;
-      background-color: transparent;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      text-align: center;
-      color: #ffffff;
-      max-width: 60rem; }
-      .mainProducto .targetasProductos .targetaProducto h4 {
-        font-size: 1rem; }
-      .mainProducto .targetasProductos .targetaProducto img {
-        width: 100%; }
+      background-color: black !important; } }
 
 @media (max-width: 768px) {
   .container {
     display: flex;
     grid-template-columns: 1fr;
     max-height: none; }
-  .targetaPrecio {
-    width: 70%;
+  .targetasPrecioContainer {
     display: flex;
-    flex-direction: column;
-    background-color: #000 !important; } }
+    flex-direction: column; }
+    .targetasPrecioContainer .targetaPrecio {
+      width: 100%;
+      display: flex;
+      background-color: black !important; } }
 
 @media (max-width: 700px) {
   .container {
     display: flex;
     grid-template-columns: 1fr;
     max-height: none; }
-  .aside_container {
+  .section_container {
     padding: 1rem;
     justify-content: space-evenly;
     margin-bottom: 0.3rem; }
-  .targetaPrecio {
-    width: 70%;
+  .targetasPrecioContainer {
     display: flex;
-    background-color: green !important; } }
+    flex-direction: column; }
+    .targetasPrecioContainer .targetaPrecio {
+      width: 100%;
+      display: flex;
+      background-color: green !important; } }
 
 @media (max-width: 576px) {
-  .targetaPrecio {
-    width: 70%;
+  .targetasPrecioContainer {
     display: flex;
-    background-color: #ddb6f1 !important; }
-  .aside_container {
+    flex-direction: column; }
+    .targetasPrecioContainer .targetaPrecio {
+      width: 100%;
+      display: flex;
+      background-color: #ddb6f1 !important; }
+  .section_container {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
@@ -459,7 +461,7 @@ header {
         gap: 1rem;
         padding: 1rem;
     } */
-  .aside {
+  .section {
     width: 100%; }
   .header {
     flex-direction: flex;
