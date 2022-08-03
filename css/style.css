@@ -80,12 +80,10 @@
     display: flex;
     text-align: center;
     font-size: 0.75rem; }
+    .main .main__index .filtros .btnPrincipal {
+      font-weight: normal; }
     .main .main__index .filtros h5 {
       font-size: 1rem; }
-    .main .main__index .filtros .filtro_1 {
-      padding: 0.2rem; }
-    .main .main__index .filtros .filtro_2 {
-      padding: 0.2rem; }
   .main .main__index .section_container {
     display: flex;
     padding: 1rem;
@@ -172,25 +170,25 @@ header {
   grid-area: footer;
   background-color: #ffffff;
   /* font-style: italic; */
-  border-top: solid 2px #000;
+  border-top: solid 1px #000;
   margin-top: 0.3rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  gap: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  gap: 1.5rem;
   font-size: 20px;
-  justify-content: center; }
+  justify-content: space-around; }
   .footer ol {
     list-style: none;
-    display: flex; }
+    display: flex;
+    margin-bottom: 0 !important; }
     .footer ol li h5 {
-      margin: 0; }
+      margin: 0 !important; }
     .footer ol li a {
       color: #000;
       text-decoration: none;
-      padding: 1rem;
-      border-right: 1px solid #000; }
+      padding: 1rem; }
+  .footer h6 {
+    text-align: center; }
 
 .main__registro .formularios {
   display: flex;
@@ -239,24 +237,24 @@ header {
   width: 100%;
   margin-top: 0.3rem;
   text-align: justify;
-  align-items: center; }
+  align-items: center;
+  padding: 1rem; }
   .main .mainContacto .textoContacto {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     max-width: 37.5rem; }
+    .main .mainContacto .textoContacto .tituloPrincipal {
+      text-align: center; }
   .main .mainContacto .carruselesContacto {
     justify-content: center;
     width: 100%;
-    max-width: 27.5em;
-    padding: 1rem 0rem 1rem 0rem;
-    margin: 1rem;
-    padding: 1rem; }
+    max-width: 37.5em; }
   .main .mainContacto .ubicacionContainer {
     margin-bottom: 1rem;
-    width: 70%;
-    max-width: 30.5em; }
+    width: 100%;
+    max-width: 37.5em; }
     .main .mainContacto .ubicacionContainer .ubicacion {
       width: 100%; }
       .main .mainContacto .ubicacionContainer .ubicacion .ubicacionTexto {
@@ -266,6 +264,7 @@ header {
           font-size: 1.5rem;
           color: #ffffff; }
         .main .mainContacto .ubicacionContainer .ubicacion .ubicacionTexto h2 {
+          padding-top: 1rem;
           font-weight: 500;
           color: #ffffff; }
 
@@ -367,8 +366,9 @@ header {
       bottom: 0.5rem;
       padding: 0rem; }
   .mainProducto .targetaPrecioContainer {
+    color: #000;
     margin-top: 0.3rem;
-    background-color: lightcoral; }
+    background-color: #E0E0E0; }
     .mainProducto .targetaPrecioContainer .targetaPrecio {
       padding: 0 1rem; }
       .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio {
@@ -378,15 +378,18 @@ header {
         text-align: justify;
         align-items: center; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h1 {
+          color: #000 !important;
           padding: 0;
-          margin: 0; }
+          margin: 0;
+          font-weight: 700;
+          font-size: 40px; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h2 {
           padding: 1rem 0 0 0; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio p {
-          padding: 1rem 0 0 0;
+          padding: 1rem 1rem;
           margin: 0; }
     .mainProducto .targetaPrecioContainer .carruselPrecio {
-      max-width: 350px;
+      max-width: 380px;
       width: 100%; }
   .mainProducto .targetasProductosGrid {
     justify-items: center;
@@ -416,7 +419,7 @@ header {
     .targetaPrecioContainer .targetaPrecio {
       width: 100%;
       display: flex;
-      background-color: black !important; }
+      background-color: #E0E0E0 !important; }
   .targetasProductosGrid {
     display: flex;
     max-height: none; }
@@ -434,12 +437,17 @@ header {
     .targetaPrecioContainer .targetaPrecio {
       width: 100%;
       display: flex;
-      background-color: black !important; }
+      background-color: #E0E0E0 !important; }
   .targetasProductosGrid {
     display: flex;
     max-height: none; }
   .carruselPrecio {
-    max-width: none !important; } }
+    max-width: none !important; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; } }
 
 @media (max-width: 700px) {
   .container {
@@ -456,7 +464,7 @@ header {
     .targetaPrecioContainer .targetaPrecio {
       width: 100%;
       display: flex;
-      background-color: green !important; }
+      background-color: #E0E0E0 !important; }
   .targetasProductosGrid {
     display: flex;
     max-height: none; }
@@ -470,7 +478,7 @@ header {
     .targetaPrecioContainer .targetaPrecio {
       width: 100%;
       display: flex;
-      background-color: #ddb6f1 !important; }
+      background-color: #E0E0E0 !important; }
   .section_container {
     flex-direction: column;
     justify-content: center;

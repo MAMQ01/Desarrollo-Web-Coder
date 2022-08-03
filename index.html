@@ -50,21 +50,22 @@
 
     <main class="main">
         <div class="main__index">
-            <div class="filtros textoFiltros">
-                <div class="filtro_1">
-                    <h5 class="h5">Ordenar por precio</h5>
-                    <select name="Ordenar" id="">
-                        <option value="casas">Menor precio</option>
-                        <option value="aptos">Mayor precio</option>
+            <div class="filtros p-1">
+                <div class="form-floating ">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="1">Menor precio</option>
+                        <option value="2">Mayor precio</option>
+                        <option value="3">Recomendado</option>
                     </select>
+                    <label for="floatingSelect">Ordenar por</label>
                 </div>
-                <div class="filtro_2">
-                    <h5 class="h5">Filtrar por vivienda</h5>
-                    <select name="filtros_casas" id="">
-                        <option value="casas">Casas</option>
-                        <option value="aptos">Apartamentos</option>
-                        <option value="fincas">Fincas</option>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="1">Casas</option>
+                        <option value="2">Apartamentos</option>
+                        <option value="3">Fincas</option>
                     </select>
+                    <label for="floatingSelect">Estoy buscando</label>
                 </div>
                 <button class="btnPrincipal">Search</button>
             </div>

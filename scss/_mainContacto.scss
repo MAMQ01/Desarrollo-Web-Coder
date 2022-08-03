@@ -6,25 +6,26 @@
         margin-top: 0.3rem;
         text-align: justify;
         align-items: center;
+        padding: 1rem;
         .textoContacto{
             display: flex;
             justify-content: center;
             flex-direction: column;
-            width: 80%;
+            width: 100%;
             max-width: 37.5rem;
+            .tituloPrincipal{
+                text-align: center;
+            }
         }
         .carruselesContacto{
             justify-content: center;
             width: 100%;
-            max-width: 27.5em;
-            padding: 1rem 0rem 1rem 0rem;
-            margin: 1rem;
-            padding: 1rem;
+            max-width: 37.5em;
         }
         .ubicacionContainer{
             margin-bottom: 1rem;
-            width: 70%;
-            max-width: 30.5em;
+            width: 100%;
+            max-width: 37.5em;
             .ubicacion{
                 width: 100%;
                 .ubicacionTexto{
@@ -35,6 +36,7 @@
                         color: $colorBlanco;
                     }
                     h2{
+                        padding-top: 1rem;
                         font-weight: 500;
                         color: $colorBlanco;
                     }

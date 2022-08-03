@@ -48,8 +48,9 @@
     }
 
     .targetaPrecioContainer {
+        color: $colorNegro;
         margin-top: 0.3rem;
-        background-color: lightcoral;
+        background-color: #E0E0E0;
         .targetaPrecio {  
             padding: 0 1rem;
             .textoPrecio {
@@ -59,21 +60,24 @@
                 text-align: justify;
                 align-items: center;
                 h1{
+                    color: $colorNegro !important;
                     padding: 0;
                     margin: 0;
+                    font-weight: 700;
+                    font-size: 40px;
                 }
                 h2{
                     padding: 1rem 0 0 0 ;
                 }
                 p{
-                    padding: 1rem 0 0 0;
+                    padding: 1rem 1rem;
                     margin: 0;
                 }
             }
         }
 
         .carruselPrecio {
-            max-width: 350px;
+            max-width: 380px;
             width: 100%;
         }
     }

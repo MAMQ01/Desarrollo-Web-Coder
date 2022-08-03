@@ -15,14 +15,11 @@
             display: flex;
             text-align: center;
             font-size: 0.75rem;
+            .btnPrincipal{
+                font-weight: normal;
+            }
             h5{
                 font-size: 1rem;
-            }
-            .filtro_1{
-                padding: 0.2rem;
-            }
-            .filtro_2 {
-                padding: 0.2rem;
             }
         }
         .section_container {

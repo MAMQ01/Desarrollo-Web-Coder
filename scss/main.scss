@@ -183,7 +183,7 @@ $textoFiltros:(
         .targetaPrecio{
             width: 100%;
             display: flex;
-            background-color: black !important;
+            background-color: #E0E0E0 !important;
         }
     }
 
@@ -195,6 +195,7 @@ $textoFiltros:(
     .carruselPrecio {
         max-width: none !important;
     }
+
 }
 
 @media (max-width:768px) {
@@ -211,7 +212,7 @@ $textoFiltros:(
         .targetaPrecio{
             width: 100%;
             display: flex;
-            background-color: black !important;
+            background-color: #E0E0E0 !important;
         }
     }
 
@@ -222,6 +223,13 @@ $textoFiltros:(
 
     .carruselPrecio {
         max-width: none !important;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 1rem;
     }
 }
 
@@ -246,7 +254,7 @@ $textoFiltros:(
         .targetaPrecio{
             width: 100%;
             display: flex;
-            background-color: green !important;
+            background-color: #E0E0E0 !important;
         }
     }
 
@@ -269,7 +277,7 @@ $textoFiltros:(
         .targetaPrecio{
             width: 100%;
             display: flex;
-            background-color: #ddb6f1 !important;
+            background-color: #E0E0E0 !important;
         }
     }
 
