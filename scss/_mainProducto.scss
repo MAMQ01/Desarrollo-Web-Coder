@@ -25,7 +25,6 @@
     .sectionProducto {
         // grid-area: asideProducto;
         width: 100%;
-        max-height: 300px;
         padding: 1.5rem;
         background-color: $colorSecundario;
         display: flex;
@@ -48,22 +47,17 @@
         }
     }
 
-    .targetasPrecioContainer {
+    .targetaPrecioContainer {
+        margin-top: 0.3rem;
         background-color: lightcoral;
-        .targetaPrecio {
-            background-color: lightcoral;
-            flex-direction: row;
-            align-items: center;    
-            width: 100%;
-            padding: 1rem;
+        .targetaPrecio {  
+            padding: 0 1rem;
             .textoPrecio {
-                width: 100%;
                 display: flex;
                 flex-direction: column;
                 width: auto;
                 text-align: justify;
                 align-items: center;
-                padding-top: 4rem;
                 h1{
                     padding: 0;
                     margin: 0;
@@ -79,27 +73,27 @@
         }
 
         .carruselPrecio {
+            max-width: 350px;
             width: 100%;
-            padding: 1rem;
         }
-
     }
 
-    .targetasProductos {
+
+    .targetasProductosGrid{
+        justify-items: center;
         width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
         // display: grid;
         // grid-template-columns: repeat(3fr 1r);
         // grid-template-areas:"targetaProducto targetaProducto targetaProducto"
         //                     "targetaProducto targetaProducto targetaProducto"
         //                     "targetaProducto targetaProducto targetaProducto";
-
-        .targetaProducto {
-            h4 {
-                font-size: 1rem;
-            }
-
-            img {
-                width: 70%;
+        .card-body{
+            color: $colorNegro;
+            p,h5{
+            text-align: start;
             }
         }
     }

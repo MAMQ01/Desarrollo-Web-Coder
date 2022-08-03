@@ -104,7 +104,7 @@
 .main .main__index .filtros .filtro_2 {
   padding: 0.2rem;
 }
-.main .main__index .aside_container {
+.main .main__index .section_container {
   display: flex;
   padding: 1rem;
   justify-content: space-evenly;
@@ -127,7 +127,7 @@ header .navbar .container-fluid .logo {
   padding: 0px;
 }
 
-.aside {
+.section {
   width: 13.5rem;
   padding: 1.5rem;
   background-color: #02AFFE;
@@ -136,15 +136,15 @@ header .navbar .container-fluid .logo {
   flex-direction: column;
   align-items: center;
 }
-.aside h3 {
+.section h3 {
   padding: 1.5rem;
   text-align: center;
   color: #ffffff;
 }
-.aside p {
+.section p {
   text-align: justify;
 }
-.aside a {
+.section a {
   font-weight: 500;
   text-decoration: none;
   color: white;
@@ -218,6 +218,9 @@ header .navbar .container-fluid .logo {
 .footer ol {
   list-style: none;
   display: flex;
+}
+.footer ol li h5 {
+  margin: 0;
 }
 .footer ol li a {
   color: #000;
@@ -411,9 +414,8 @@ header .navbar .container-fluid .logo {
   max-height: 300px;
   padding: 0.5rem;
 }
-.mainProducto .asideProducto {
+.mainProducto .sectionProducto {
   width: 100%;
-  max-height: 300px;
   padding: 1.5rem;
   background-color: #02AFFE;
   display: flex;
@@ -421,74 +423,115 @@ header .navbar .container-fluid .logo {
   align-items: center;
   border: solid #000 1px;
 }
-.mainProducto .asideProducto h3 {
+.mainProducto .sectionProducto h3 {
   padding: 1.5rem;
   text-align: center;
   color: #ffffff;
 }
-.mainProducto .asideProducto p {
+.mainProducto .sectionProducto p {
   text-align: justify;
 }
-.mainProducto .asideProducto a {
+.mainProducto .sectionProducto a {
   font-weight: 500;
   text-decoration: none;
   color: white;
   bottom: 0.5rem;
   padding: 0rem;
 }
-.mainProducto .container-fluid {
-  padding-top: 2rem;
+.mainProducto .targetaPrecioContainer {
+  margin-top: 0.3rem;
+  background-color: lightcoral;
 }
-.mainProducto .container-fluid .targetaPrecio__container {
-  padding-top: 1rem;
+.mainProducto .targetaPrecioContainer .targetaPrecio {
+  padding: 0 1rem;
 }
-.mainProducto .container-fluid .targetaPrecio__container .targetaPrecio {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  background-color: aquamarine;
-}
-.mainProducto .container-fluid .targetaPrecio__container .targetaPrecio .textoPrecio {
-  text-align: justify;
-}
-.mainProducto .container-fluid .targetaPrecio__container .targetaPrecio .carruselesPrecio {
-  max-width: 400px;
-}
-.mainProducto .targetasProductos {
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(3fr 1fr);
-  grid-template-areas: "targetaProducto     targetaProducto        targetaProducto";
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 1.6rem;
-  overflow: hidden;
-  border: solid #000 1px;
-  margin: 1rem;
-  padding: 1rem;
-}
-.mainProducto .targetasProductos .targetaProducto {
-  max-width: 300px;
-  background-color: transparent;
+.mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  color: #ffffff;
-  max-width: 60rem;
+  width: auto;
+  text-align: justify;
+  align-items: center;
 }
-.mainProducto .targetasProductos .targetaProducto h4 {
-  font-size: 1rem;
+.mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h1 {
+  padding: 0;
+  margin: 0;
 }
-.mainProducto .targetasProductos .targetaProducto img {
+.mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h2 {
+  padding: 1rem 0 0 0;
+}
+.mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio p {
+  padding: 1rem 0 0 0;
+  margin: 0;
+}
+.mainProducto .targetaPrecioContainer .carruselPrecio {
+  max-width: 350px;
   width: 100%;
 }
+.mainProducto .targetasProductosGrid {
+  justify-items: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.mainProducto .targetasProductosGrid .card-body {
+  color: #000;
+}
+.mainProducto .targetasProductosGrid .card-body p, .mainProducto .targetasProductosGrid .card-body h5 {
+  text-align: start;
+}
 
+@media (min-width: 992px) {
+  .targetasProductosGrid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    grid-template-columns: 2fr;
+    max-height: none;
+  }
+  .targetaPrecioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .targetaPrecioContainer .targetaPrecio {
+    width: 100%;
+    display: flex;
+    background-color: black !important;
+  }
+  .targetasProductosGrid {
+    display: flex;
+    max-height: none;
+  }
+  .carruselPrecio {
+    max-width: none !important;
+  }
+}
 @media (max-width: 768px) {
   .container {
     display: flex;
     grid-template-columns: 1fr;
     max-height: none;
+  }
+  .targetaPrecioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .targetaPrecioContainer .targetaPrecio {
+    width: 100%;
+    display: flex;
+    background-color: black !important;
+  }
+  .targetasProductosGrid {
+    display: flex;
+    max-height: none;
+  }
+  .carruselPrecio {
+    max-width: none !important;
   }
 }
 @media (max-width: 700px) {
@@ -497,15 +540,39 @@ header .navbar .container-fluid .logo {
     grid-template-columns: 1fr;
     max-height: none;
   }
+  .section_container {
+    padding: 1rem;
+    justify-content: space-evenly;
+    margin-bottom: 0.3rem;
+  }
+  .targetaPrecioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .targetaPrecioContainer .targetaPrecio {
+    width: 100%;
+    display: flex;
+    background-color: green !important;
+  }
+  .targetasProductosGrid {
+    display: flex;
+    max-height: none;
+  }
+  .carruselPrecio {
+    max-width: none !important;
+  }
 }
-.aside_container {
-  padding: 1rem;
-  justify-content: space-evenly;
-  margin-bottom: 0.3rem;
-}
-
 @media (max-width: 576px) {
-  .aside_container {
+  .targetaPrecioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .targetaPrecioContainer .targetaPrecio {
+    width: 100%;
+    display: flex;
+    background-color: #ddb6f1 !important;
+  }
+  .section_container {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
@@ -517,7 +584,7 @@ header .navbar .container-fluid .logo {
       gap: 1rem;
       padding: 1rem;
   } */
-  .aside {
+  .section {
     width: 100%;
   }
   .header {
@@ -533,5 +600,12 @@ header .navbar .container-fluid .logo {
   }
   .header nav {
     padding-right: 0px;
+  }
+  .targetasProductosGrid {
+    display: flex;
+    max-height: none;
+  }
+  .carruselPrecio {
+    max-width: none !important;
   }
 }/*# sourceMappingURL=main.css.map */
