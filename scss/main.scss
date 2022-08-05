@@ -266,6 +266,10 @@ $textoFiltros:(
     .carruselPrecio {
         max-width: none !important;
     }
+
+    .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h1 {
+        text-align: center;
+    }
 }
 
 // carruselcontainer

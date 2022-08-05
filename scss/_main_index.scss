@@ -5,6 +5,11 @@
     justify-content: center;
     margin-top: 0.3rem;
     .main__index{
+        h1{
+            display: none;
+            font-size: 25px;
+            text-align: center;
+        }
         .filtros{
             background-color: $colorNaranjaGD;
             align-items: center;

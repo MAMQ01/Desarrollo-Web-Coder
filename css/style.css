@@ -70,6 +70,10 @@
   color: #ffffff;
   justify-content: center;
   margin-top: 0.3rem; }
+  .main .main__index h1 {
+    display: none;
+    font-size: 25px;
+    text-align: center; }
   .main .main__index .filtros {
     background-color: #f8af40;
     align-items: center;
@@ -247,6 +251,8 @@ header {
     max-width: 37.5rem; }
     .main .mainContacto .textoContacto .tituloPrincipal {
       text-align: center; }
+    .main .mainContacto .textoContacto p {
+      padding-top: 1rem; }
   .main .mainContacto .carruselesContacto {
     justify-content: center;
     width: 100%;
@@ -353,12 +359,10 @@ header {
     flex-direction: column;
     align-items: center;
     border: solid #000 1px; }
-    .mainProducto .sectionProducto h3 {
-      padding: 1.5rem;
-      text-align: center;
-      color: #ffffff; }
     .mainProducto .sectionProducto p {
-      text-align: justify; }
+      text-align: justify;
+      padding: 0;
+      margin: 0; }
     .mainProducto .sectionProducto a {
       font-weight: 500;
       text-decoration: none;
@@ -370,7 +374,10 @@ header {
     margin-top: 0.3rem;
     background-color: #E0E0E0; }
     .mainProducto .targetaPrecioContainer .targetaPrecio {
-      padding: 0 1rem; }
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      font-weight: 300; }
       .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio {
         display: flex;
         flex-direction: column;
@@ -378,16 +385,21 @@ header {
         text-align: justify;
         align-items: center; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h1 {
+          font-family: 'Courier New', Courier, monospace;
           color: #000 !important;
-          padding: 0;
+          padding: 1rem 1rem 0 0;
           margin: 0;
-          font-weight: 700;
+          font-weight: 500;
           font-size: 40px; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h2 {
-          padding: 1rem 0 0 0; }
+          background-color: #f8af40;
+          border-radius: 10px;
+          padding: 0.2rem 0.5rem; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio p {
-          padding: 1rem 1rem;
-          margin: 0; }
+          padding: 1rem 0rem;
+          margin: 0;
+          color: #000;
+          font-size: 20px; }
     .mainProducto .targetaPrecioContainer .carruselPrecio {
       max-width: 380px;
       width: 100%; }
@@ -469,7 +481,9 @@ header {
     display: flex;
     max-height: none; }
   .carruselPrecio {
-    max-width: none !important; } }
+    max-width: none !important; }
+  .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h1 {
+    text-align: center; } }
 
 @media (max-width: 576px) {
   .targetaPrecioContainer {
