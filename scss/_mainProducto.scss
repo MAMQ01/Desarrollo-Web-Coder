@@ -44,6 +44,7 @@
     }
 
     .targetaPrecioContainer {
+        flex-direction: row;
         color: $colorNegro;
         margin-top: 0.3rem;
         background-color: #E0E0E0;
@@ -51,11 +52,12 @@
             display: flex;
             align-items: center;
             padding: 0 1rem;
-            font-weight: 300;
+            max-width: 65%;
+            align-items: center;
             .textoPrecio {
+                padding: 0rem 1rem;
                 display: flex;
                 flex-direction: column;
-                width: auto;
                 text-align: justify;
                 align-items: center;
                 h1{
@@ -64,9 +66,11 @@
                     padding: 1rem 1rem 0 0;
                     margin: 0;
                     font-weight: 500;
-                    font-size: 40px;
+                    font-size: 30px;
+                    text-align: center;
                 }
                 h2{
+                    margin-top: 1rem;
                     background-color: $colorNaranjaGD;
                     border-radius: 10px;
                     padding: 0.2rem 0.5rem;

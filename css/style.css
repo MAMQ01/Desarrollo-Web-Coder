@@ -90,9 +90,9 @@
       font-size: 1rem; }
   .main .main__index .section_container {
     display: flex;
-    padding: 1rem;
+    flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 0.3rem; }
+    padding-bottom: 1.5rem; }
 
 header {
   grid-area: header;
@@ -108,15 +108,15 @@ header {
       padding: 0px; }
 
 .section {
-  width: 13.5rem;
-  padding: 1.5rem;
+  width: 100%;
+  padding: 0.5rem;
   background-color: #02AFFE;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 0.3rem; }
   .section h3 {
-    padding: 1.5rem;
+    padding: 0.5rem;
     text-align: center;
     color: #ffffff; }
   .section p {
@@ -138,7 +138,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.6rem;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 1.5rem; }
   .container .targeta {
     width: 100%;
     border-radius: 3px;
@@ -148,6 +149,7 @@ header {
     padding: 0.5rem;
     max-width: 320px; }
     .container .targeta img {
+      padding-top: 0.5rem;
       width: 15rem;
       height: auto;
       width: 100%;
@@ -370,6 +372,7 @@ header {
       bottom: 0.5rem;
       padding: 0rem; }
   .mainProducto .targetaPrecioContainer {
+    flex-direction: row;
     color: #000;
     margin-top: 0.3rem;
     background-color: #E0E0E0; }
@@ -377,11 +380,12 @@ header {
       display: flex;
       align-items: center;
       padding: 0 1rem;
-      font-weight: 300; }
+      max-width: 65%;
+      align-items: center; }
       .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio {
+        padding: 0rem 1rem;
         display: flex;
         flex-direction: column;
-        width: auto;
         text-align: justify;
         align-items: center; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h1 {
@@ -390,8 +394,10 @@ header {
           padding: 1rem 1rem 0 0;
           margin: 0;
           font-weight: 500;
-          font-size: 40px; }
+          font-size: 30px;
+          text-align: center; }
         .mainProducto .targetaPrecioContainer .targetaPrecio .textoPrecio h2 {
+          margin-top: 1rem;
           background-color: #f8af40;
           border-radius: 10px;
           padding: 0.2rem 0.5rem; }
@@ -421,15 +427,25 @@ header {
     grid-template-rows: auto; } }
 
 @media (max-width: 992px) {
+  .section_container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-evenly;
+    margin-bottom: 0.3rem;
+    align-items: initial !important; }
   .container {
     display: flex;
     grid-template-columns: 2fr;
     max-height: none; }
   .targetaPrecioContainer {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column !important;
+    width: 100% !important; }
     .targetaPrecioContainer .targetaPrecio {
       width: 100%;
+      max-width: none !important;
       display: flex;
       background-color: #E0E0E0 !important; }
   .targetasProductosGrid {

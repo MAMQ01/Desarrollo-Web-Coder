@@ -166,10 +166,21 @@ $textoFiltros:(
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
     }
-
 }
 
 @media (max-width:992px) {
+
+    .section_container{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: space-evenly;
+        margin-bottom: 0.3rem;
+        align-items: initial !important;
+    }
+
+
 
     .container {
         display: flex;
@@ -179,9 +190,11 @@ $textoFiltros:(
 
     .targetaPrecioContainer{
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
+        width: 100% !important;
         .targetaPrecio{
             width: 100%;
+            max-width: none !important;
             display: flex;
             background-color: #E0E0E0 !important;
         }
